@@ -1,0 +1,772 @@
+{
+    "html": [
+      {
+        "question": "What does HTML stand for?",
+        "options": [
+          "Hyperlinks and Text Markup Language",
+          "Home Tool Markup Language",
+          "HyperText Markup Language",
+          "Hyperlinking Textual Markup Language"
+        ],
+        "answer": "HyperText Markup Language"
+      },
+      {
+        "question": "Which tag is used for inserting an image in HTML?",
+        "options": [
+          "<img>",
+          "<image>",
+          "<src>",
+          "<picture>"
+        ],
+        "answer": "<img>"
+      },
+      {
+        "question": "What is the correct HTML element for inserting a line break?",
+        "options": [
+          "<break>",
+          "<br>",
+          "<lb>",
+          "<newline>"
+        ],
+        "answer": "<br>"
+      },
+      {
+        "question": "Which tag is used to create a hyperlink in HTML?",
+        "options": [
+          "<link>",
+          "<a>",
+          "<href>",
+          "<hyper>"
+        ],
+        "answer": "<a>"
+      },
+      {
+        "question": "How can you make a numbered list in HTML?",
+        "options": [
+          "<ul>",
+          "<ol>",
+          "<dl>",
+          "<list>"
+        ],
+        "answer": "<ol>"
+      },
+      {
+        "question": "What does the <title> tag do?",
+        "options": [
+          "Sets the page title in the browser tab",
+          "Creates a heading",
+          "Adds an image caption",
+          "Defines a section"
+        ],
+        "answer": "Sets the page title in the browser tab"
+      },
+      {
+        "question": "Which tag is used to define a table row?",
+        "options": [
+          "<tr>",
+          "<td>",
+          "<th>",
+          "<row>"
+        ],
+        "answer": "<tr>"
+      },
+      {
+        "question": "What attribute specifies the URL in an <a> tag?",
+        "options": [
+          "src",
+          "href",
+          "link",
+          "url"
+        ],
+        "answer": "href"
+      },
+      {
+        "question": "Which tag is used to define a form in HTML?",
+        "options": [
+          "<input>",
+          "<form>",
+          "<submit>",
+          "<fieldset>"
+        ],
+        "answer": "<form>"
+      },
+      {
+        "question": "What is the correct way to comment in HTML?",
+        "options": [
+          "// comment",
+          "<!-- comment -->",
+          "# comment",
+          "** comment **"
+        ],
+        "answer": "<!-- comment -->"
+      }
+    ],
+    "css": [
+      {
+        "question": "What does CSS stand for?",
+        "options": [
+          "Creative Style Sheets",
+          "Cascading Style Sheets",
+          "Computer Style Sheets",
+          "Colorful Style Sheets"
+        ],
+        "answer": "Cascading Style Sheets"
+      },
+      {
+        "question": "Which property is used to change the background color?",
+        "options": [
+          "color",
+          "background-color",
+          "bgcolor",
+          "bg-color"
+        ],
+        "answer": "background-color"
+      },
+      {
+        "question": "How do you make all <p> elements bold?",
+        "options": [
+          "p {font-weight: bold;}",
+          "p {text-weight: bold;}",
+          "p {style: bold;}",
+          "p {font: bold;}"
+        ],
+        "answer": "p {font-weight: bold;}"
+      },
+      {
+        "question": "Which CSS property controls the text size?",
+        "options": [
+          "font-style",
+          "text-size",
+          "font-size",
+          "text-style"
+        ],
+        "answer": "font-size"
+      },
+      {
+        "question": "What is the default position value in CSS?",
+        "options": [
+          "relative",
+          "absolute",
+          "fixed",
+          "static"
+        ],
+        "answer": "static"
+      },
+      {
+        "question": "Which value of 'position' makes the element relative to the browser window?",
+        "options": [
+          "relative",
+          "absolute",
+          "fixed",
+          "sticky"
+        ],
+        "answer": "fixed"
+      },
+      {
+        "question": "How can you select an element with id 'demo'?",
+        "options": [
+          "#demo",
+          ".demo",
+          "demo",
+          "*demo"
+        ],
+        "answer": "#demo"
+      },
+      {
+        "question": "Which property is used to change the font of an element?",
+        "options": [
+          "text-style",
+          "font-family",
+          "font-style",
+          "text-font"
+        ],
+        "answer": "font-family"
+      },
+      {
+        "question": "Which property is used to center text?",
+        "options": [
+          "text-align",
+          "text-center",
+          "align",
+          "center"
+        ],
+        "answer": "text-align"
+      },
+      {
+        "question": "How do you add space inside an element\u2019s border?",
+        "options": [
+          "padding",
+          "margin",
+          "spacing",
+          "border-spacing"
+        ],
+        "answer": "padding"
+      }
+    ],
+    "javascript": [
+      {
+        "question": "Which symbol is used for comments in JavaScript?",
+        "options": [
+          "<!-- comment -->",
+          "# comment",
+          "// comment",
+          "** comment **"
+        ],
+        "answer": "// comment"
+      },
+      {
+        "question": "How do you create a function in JavaScript?",
+        "options": [
+          "function:myFunction()",
+          "function myFunction()",
+          "def myFunction()",
+          "create myFunction()"
+        ],
+        "answer": "function myFunction()"
+      },
+      {
+        "question": "What keyword is used to declare a variable in JavaScript?",
+        "options": [
+          "var",
+          "int",
+          "dim",
+          "string"
+        ],
+        "answer": "var"
+      },
+      {
+        "question": "Which operator is used to assign a value to a variable?",
+        "options": [
+          "-",
+          "*",
+          "=",
+          "+"
+        ],
+        "answer": "="
+      },
+      {
+        "question": "Which method converts JSON to a JavaScript object?",
+        "options": [
+          "JSON.stringify()",
+          "JSON.convert()",
+          "JSON.parse()",
+          "JSON.decode()"
+        ],
+        "answer": "JSON.parse()"
+      },
+      {
+        "question": "What is the correct syntax for a for loop?",
+        "options": [
+          "for i=1 to 5",
+          "for (i = 0; i < 5; i++)",
+          "foreach i in 5",
+          "loop(i=0; i<5)"
+        ],
+        "answer": "for (i = 0; i < 5; i++)"
+      },
+      {
+        "question": "Which event occurs when the user clicks on an HTML element?",
+        "options": [
+          "onmouseclick",
+          "onchange",
+          "onmouseover",
+          "onclick"
+        ],
+        "answer": "onclick"
+      },
+      {
+        "question": "How do you write 'Hello World' in an alert box?",
+        "options": [
+          "msg('Hello World');",
+          "alertBox('Hello World');",
+          "alert('Hello World');",
+          "msgBox('Hello World');"
+        ],
+        "answer": "alert('Hello World');"
+      },
+      {
+        "question": "What does DOM stand for?",
+        "options": [
+          "Document Object Model",
+          "Data Object Method",
+          "Document Order Method",
+          "Desktop Oriented Model"
+        ],
+        "answer": "Document Object Model"
+      },
+      {
+        "question": "Which built-in method adds an element to the end of an array?",
+        "options": [
+          "push()",
+          "pop()",
+          "addToEnd()",
+          "insert()"
+        ],
+        "answer": "push()"
+      }
+    ],
+    "python": [
+      {
+        "question": "What is the correct file extension for Python files?",
+        "options": [
+          ".pt",
+          ".pyt",
+          ".py",
+          ".python"
+        ],
+        "answer": ".py"
+      },
+      {
+        "question": "Which keyword is used to define a function in Python?",
+        "options": [
+          "function",
+          "def",
+          "define",
+          "fun"
+        ],
+        "answer": "def"
+      },
+      {
+        "question": "What data type is the object below? \n x = [1, 2, 3]",
+        "options": [
+          "Tuple",
+          "List",
+          "Set",
+          "Dictionary"
+        ],
+        "answer": "List"
+      },
+      {
+        "question": "Which of the following is used to handle exceptions in Python?",
+        "options": [
+          "catch",
+          "error",
+          "except",
+          "exception"
+        ],
+        "answer": "except"
+      },
+      {
+        "question": "How do you insert COMMENTS in Python code?",
+        "options": [
+          "// This is a comment",
+          "# This is a comment",
+          "-- This is a comment",
+          "/* This is a comment */"
+        ],
+        "answer": "# This is a comment"
+      },
+      {
+        "question": "Which function is used to output text in Python?",
+        "options": [
+          "echo()",
+          "print()",
+          "printf()",
+          "out()"
+        ],
+        "answer": "print()"
+      },
+      {
+        "question": "Which keyword is used to create a class in Python?",
+        "options": [
+          "class",
+          "define",
+          "object",
+          "type"
+        ],
+        "answer": "class"
+      },
+      {
+        "question": "Which module in Python is used for regular expressions?",
+        "options": [
+          "pyregex",
+          "regex",
+          "re",
+          "pattern"
+        ],
+        "answer": "re"
+      },
+      {
+        "question": "What is the output of: len('Skill')?",
+        "options": [
+          "5",
+          "4",
+          "6",
+          "Error"
+        ],
+        "answer": "5"
+      },
+      {
+        "question": "What is the result of 3 * '7' in Python?",
+        "options": [
+          "21",
+          "'777'",
+          "'21'",
+          "777"
+        ],
+        "answer": "'777'"
+      }
+    ],
+    "java": [
+      {
+        "question": "Which keyword is used to create a class in Java?",
+        "options": [
+          "class",
+          "define",
+          "struct",
+          "new"
+        ],
+        "answer": "class"
+      },
+      {
+        "question": "Which method is the entry point of a Java program?",
+        "options": [
+          "start()",
+          "init()",
+          "main()",
+          "run()"
+        ],
+        "answer": "main()"
+      },
+      {
+        "question": "Which keyword is used for inheritance in Java?",
+        "options": [
+          "inherits",
+          "extends",
+          "implements",
+          "derives"
+        ],
+        "answer": "extends"
+      },
+      {
+        "question": "What is the size of an int variable in Java?",
+        "options": [
+          "8 bits",
+          "16 bits",
+          "32 bits",
+          "64 bits"
+        ],
+        "answer": "32 bits"
+      },
+      {
+        "question": "Which of these is not a Java keyword?",
+        "options": [
+          "static",
+          "Boolean",
+          "void",
+          "private"
+        ],
+        "answer": "Boolean"
+      },
+      {
+        "question": "Which operator is used to compare two values?",
+        "options": [
+          "=",
+          "==",
+          "!=",
+          "equals"
+        ],
+        "answer": "=="
+      },
+      {
+        "question": "Which package contains the Random class?",
+        "options": [
+          "java.util",
+          "java.lang",
+          "java.random",
+          "java.math"
+        ],
+        "answer": "java.util"
+      },
+      {
+        "question": "Which keyword is used to prevent inheritance?",
+        "options": [
+          "stop",
+          "final",
+          "sealed",
+          "const"
+        ],
+        "answer": "final"
+      },
+      {
+        "question": "How do you declare a constant in Java?",
+        "options": [
+          "final",
+          "const",
+          "static",
+          "permanent"
+        ],
+        "answer": "final"
+      },
+      {
+        "question": "Which access modifier makes members accessible within the same package?",
+        "options": [
+          "private",
+          "protected",
+          "default",
+          "public"
+        ],
+        "answer": "default"
+      }
+    ],
+    "data_structures": [
+      {
+        "question": "Which data structure uses FIFO principle?",
+        "options": [
+          "Stack",
+          "Queue",
+          "Tree",
+          "Graph"
+        ],
+        "answer": "Queue"
+      },
+      {
+        "question": "Which data structure uses LIFO principle?",
+        "options": [
+          "Queue",
+          "Heap",
+          "Stack",
+          "Tree"
+        ],
+        "answer": "Stack"
+      },
+      {
+        "question": "Which of the following is not a linear data structure?",
+        "options": [
+          "Array",
+          "Stack",
+          "Linked List",
+          "Tree"
+        ],
+        "answer": "Tree"
+      },
+      {
+        "question": "Which data structure is used in recursion?",
+        "options": [
+          "Queue",
+          "Stack",
+          "Array",
+          "Tree"
+        ],
+        "answer": "Stack"
+      },
+      {
+        "question": "What is the worst-case time complexity of binary search?",
+        "options": [
+          "O(1)",
+          "O(n)",
+          "O(log n)",
+          "O(n log n)"
+        ],
+        "answer": "O(log n)"
+      },
+      {
+        "question": "Which of the following supports dynamic memory allocation?",
+        "options": [
+          "Array",
+          "Linked List",
+          "Stack",
+          "Queue"
+        ],
+        "answer": "Linked List"
+      },
+      {
+        "question": "Which traversal visits nodes in left-root-right order?",
+        "options": [
+          "Preorder",
+          "Inorder",
+          "Postorder",
+          "Level order"
+        ],
+        "answer": "Inorder"
+      },
+      {
+        "question": "What is the maximum number of children a binary tree node can have?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": "2"
+      },
+      {
+        "question": "Which data structure is ideal for implementing undo operations?",
+        "options": [
+          "Stack",
+          "Queue",
+          "Linked List",
+          "Array"
+        ],
+        "answer": "Stack"
+      },
+      {
+        "question": "Which structure is used to implement BFS?",
+        "options": [
+          "Stack",
+          "Queue",
+          "Array",
+          "Tree"
+        ],
+        "answer": "Queue"
+      }
+    ],
+  
+    "web_development": [
+      {
+        "question": "Which of the following is a JavaScript framework?",
+        "options": ["Laravel", "Django", "React", "Flask"],
+        "answer": "React"
+      },
+      {
+        "question": "What does CSS stand for?",
+        "options": ["Computer Style Sheets", "Creative Style Sheets", "Cascading Style Sheets", "Colorful Style Sheets"],
+        "answer": "Cascading Style Sheets"
+      },
+      {
+        "question": "Which tag is used to include JavaScript in HTML?",
+        "options": ["<script>", "<js>", "<javascript>", "<code>"],
+        "answer": "<script>"
+      },
+      {
+        "question": "Which HTTP status code means 'Not Found'?",
+        "options": ["200", "404", "500", "403"],
+        "answer": "404"
+      },
+      {
+        "question": "Which tool can be used to ensure code quality?",
+        "options": ["JSLint", "Photoshop", "Firebase", "Docker"],
+        "answer": "JSLint"
+      },
+      {
+        "question": "What is the default port for HTTP?",
+        "options": ["80", "8080", "443", "3000"],
+        "answer": "80"
+      },
+      {
+        "question": "What does a CDN help with?",
+        "options": ["Hosting data locally", "Reducing latency", "Storing cookies", "Encrypting traffic"],
+        "answer": "Reducing latency"
+      },
+      {
+        "question": "Which CSS unit is relative to the root element?",
+        "options": ["px", "em", "rem", "%"],
+        "answer": "rem"
+      },
+      {
+        "question": "Which is a valid method in JavaScript for selecting an element by ID?",
+        "options": ["getElementByID()", "querySelector()", "selectById()", "findId()"],
+        "answer": "getElementByID()"
+      },
+      {
+        "question": "What does the 'responsive web design' mean?",
+        "options": ["Designing websites for mobile apps only", "Creating a site for desktops", "Making web pages look good on all devices", "None"],
+        "answer": "Making web pages look good on all devices"
+      }
+    ],
+    "cyber_security": [
+      {
+        "question": "What does the term 'phishing' refer to?",
+        "options": ["A type of malware", "An attack that tricks users into giving sensitive info", "Network monitoring", "Encrypted traffic"],
+        "answer": "An attack that tricks users into giving sensitive info"
+      },
+      {
+        "question": "Which is a strong password?",
+        "options": ["123456", "password", "qwerty", "T!m3@2023#"],
+        "answer": "T!m3@2023#"
+      },
+      {
+        "question": "What is a firewall used for?",
+        "options": ["Hacking systems", "Securing wireless networks", "Monitoring traffic", "Blocking unauthorized access"],
+        "answer": "Blocking unauthorized access"
+      },
+      {
+        "question": "Which protocol is secure for transferring data?",
+        "options": ["HTTP", "FTP", "HTTPS", "Telnet"],
+        "answer": "HTTPS"
+      },
+      {
+        "question": "What is two-factor authentication?",
+        "options": ["Two passwords", "Password and captcha", "Two verification steps", "None"],
+        "answer": "Two verification steps"
+      },
+      {
+        "question": "Which of these is a type of malware?",
+        "options": ["Firewall", "Trojan", "VPN", "Proxy"],
+        "answer": "Trojan"
+      },
+      {
+        "question": "What does 'VPN' stand for?",
+        "options": ["Virtual Private Network", "Visual Protocol Network", "Verified Public Network", "Variable Path Network"],
+        "answer": "Virtual Private Network"
+      },
+      {
+        "question": "Which of these is used for encrypting data?",
+        "options": ["SSL", "HTML", "CSS", "SSH"],
+        "answer": "SSL"
+      },
+      {
+        "question": "Which attack attempts to make a machine or network resource unavailable?",
+        "options": ["Phishing", "Brute force", "DDoS", "MITM"],
+        "answer": "DDoS"
+      },
+      {
+        "question": "What is the primary goal of cybersecurity?",
+        "options": ["Create viruses", "Make systems faster", "Ensure data confidentiality, integrity, and availability", "Block all traffic"],
+        "answer": "Ensure data confidentiality, integrity, and availability"
+      }
+    ],
+    "cloud_computing": [
+      {
+        "question": "Which of these is a cloud service provider?",
+        "options": ["AWS", "Apache", "Java", "Linux"],
+        "answer": "AWS"
+      },
+      {
+        "question": "What is IaaS?",
+        "options": ["Internet as a Service", "Infrastructure as a Service", "Information as a Service", "None"],
+        "answer": "Infrastructure as a Service"
+      },
+      {
+        "question": "What does SaaS stand for?",
+        "options": ["Software as a System", "Software as a Service", "System as a Service", "Security as a Software"],
+        "answer": "Software as a Service"
+      },
+      {
+        "question": "Which of these is an example of SaaS?",
+        "options": ["Google Docs", "Amazon EC2", "Microsoft Azure", "Docker"],
+        "answer": "Google Docs"
+      },
+      {
+        "question": "Which model allows users to deploy their own applications on the cloud?",
+        "options": ["IaaS", "PaaS", "SaaS", "CaaS"],
+        "answer": "PaaS"
+      },
+      {
+        "question": "What is a benefit of cloud computing?",
+        "options": ["High upfront cost", "No scalability", "Pay-as-you-go", "Offline access only"],
+        "answer": "Pay-as-you-go"
+      },
+      {
+        "question": "Which type of cloud is shared by multiple organizations?",
+        "options": ["Private cloud", "Public cloud", "Community cloud", "Hybrid cloud"],
+        "answer": "Community cloud"
+      },
+      {
+        "question": "Which service offers computing resources on demand?",
+        "options": ["DNS", "Elastic Compute", "Router", "Load Balancer"],
+        "answer": "Elastic Compute"
+      },
+      {
+        "question": "Which tool is used to manage infrastructure as code?",
+        "options": ["Terraform", "AWS S3", "Python", "MongoDB"],
+        "answer": "Terraform"
+      },
+      {
+        "question": "Which of the following stores files in cloud?",
+        "options": ["EC2", "S3", "VPC", "Lambda"],
+        "answer": "S3"
+      }
+    ]
+  }
+  

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up - Skill Innovator</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: red;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="signupContainer">
+    <button class="close-btn" id="closeSignup">X</button>
+    <h2>Sign Up for Skill Innovator</h2>
+    <form id="signupForm">
+        <input type="text" id="signupUsername" placeholder="Username" required>
+        <input type="email" id="signupEmail" placeholder="Email" required>
+        <input type="text" id="signupMobile" placeholder="Mobile Number" required>
+        <input type="text" id="otp" placeholder="Enter OTP" required>
+        <input type="password" id="signupPassword" placeholder="Password" required>
+        <button type="button" id="signupBtn">Sign Up</button>
+    </form>
+  </div>
+
+  <script>
+    function validatePassword(password) {
+      const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$/;
+      return passwordRegex.test(password);
+    }
+
+    document.getElementById('closeSignup').addEventListener('click', function() {
+      window.location.href = 'index.html';
+    });
+
+    document.getElementById('signupBtn').addEventListener('click', function() {
+      const username = document.getElementById('signupUsername').value;
+      const email = document.getElementById('signupEmail').value;
+      const mobile = document.getElementById('signupMobile').value;
+      const otp = document.getElementById('otp').value;
+      const password = document.getElementById('signupPassword').value;
+
+      if (!validatePassword(password)) {
+          alert("Password must contain at least 8 characters, an uppercase letter, a lowercase letter, a number, and a special character.");
+          return;
+      }
+
+      if (username && email && mobile && otp && password) {
+          alert("Signup successful!");
+          window.location.href = 'login.html';
+      } else {
+          alert("Please fill in all fields.");
+      }
+    });
+  </script>
+</body>
+</html>

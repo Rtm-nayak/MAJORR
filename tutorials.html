@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tutorials | Skill Innovator</title>
+  <link rel="stylesheet" href="tutorials.css" />
+</head>
+<body>
+  <div class="tutorials-container">
+    <h1>📚 Tutorials</h1>
+    <input type="text" id="searchInput" placeholder="Search tutorials..." />
+    <section class="tutorial-section">
+      <h2>🎥 Video Tutorials</h2>
+      <div class="cards">
+        <div class="card">
+          <iframe src="https://www.youtube.com/embed/Ke90Tje7VS0" frameborder="0" allowfullscreen></iframe>
+          <p>React.js Crash Course</p>
+        </div>
+        <div class="card">
+          <iframe src="https://www.youtube.com/embed/PkZNo7MFNFg" frameborder="0" allowfullscreen></iframe>
+          <p>JavaScript Basics</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tutorial-section">
+      <h2>📖 Written Guides</h2>
+      <div class="cards">
+        <div class="card">
+          <p><strong>HTML Guide (PDF)</strong></p>
+          <a href="assets/guides/html_guide.pdf" download>Download</a>
+
+        </div>
+        <div class="card">
+          <p><strong>CSS Basics (PDF)</strong></p>
+          <a href="assets/guides/css_basics.pdf" download>Download</a>
+      
+        </div>
+        
+
+      </div>
+    </section>
+  </div>
+  <script>
+    const searchInput = document.getElementById('searchInput');
+  
+    searchInput.addEventListener('keyup', function () {
+      const query = searchInput.value.toLowerCase();
+      const cards = document.querySelectorAll('.card');
+  
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(query) ? 'block' : 'none';
+      });
+    });
+  </script>
+  
+</body>
+</html>

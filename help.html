@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Help Center | Skill Innovator</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .faq-section {
+      max-width: 700px;
+      margin: 3rem auto;
+      padding: 2rem;
+    }
+
+    .question {
+      background: #e6f0ff;
+      padding: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .answer {
+      display: none;
+      padding: 0.8rem;
+      background: #fff;
+      border-left: 4px solid #007acc;
+      margin-top: 0.3rem;
+    }
+
+    .answer.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="faq-section">
+    <h2>Help Center</h2>
+
+    <div class="question">❓ How do I create a profile?</div>
+    <div class="answer">Go to the “Create Your Profile” section, fill in your details, and click submit.</div>
+
+    <div class="question">❓ Can I become a mentor?</div>
+    <div class="answer">Yes! Fill out the mentorship form in the dashboard section and we’ll get in touch.</div>
+
+    <div class="question">❓ Is Skill Innovator free?</div>
+    <div class="answer">Yes, all tutorials, guides, and mentorship programs are free of charge.</div>
+  </div>
+
+  <script>
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(q => {
+      q.addEventListener('click', () => {
+        q.nextElementSibling.classList.toggle('show');
+      });
+    });
+  </script>
+</body>
+</html>

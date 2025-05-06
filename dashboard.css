@@ -1,0 +1,38 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f6ff;
+    margin: 0;
+    padding: 40px;
+  }
+  
+  .dashboard-container {
+    text-align: center;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  .dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px;
+  }
+  
+  .card {
+    background: #ffffff;
+    border: 2px solid #007bff;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    background-color: #eaf4ff;
+  }
+  

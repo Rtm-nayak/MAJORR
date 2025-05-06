@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search - Skill Innovator</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .search-container {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    ul#results {
+      list-style: none;
+      padding: 0;
+    }
+    ul#results li {
+      padding: 0.5rem;
+      border-bottom: 1px solid #ddd;
+      cursor: pointer;
+    }
+    ul#results li:hover {
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <h2>Search Content</h2>
+    <input type="text" id="searchInput" placeholder="Search..." />
+    <ul id="results"></ul>
+  </div>
+
+  <script>
+    // Sample data to search - can be extended or loaded dynamically
+    const data = [
+      { title: "Dashboard", url: "dashboard.html" },
+      { title: "Profile", url: "profile.html" },
+      { title: "Mentorship", url: "mentorship.html" },
+      { title: "Quizzes", url: "assessment.html" },
+      { title: "Live Sessions", url: "live-sessions.html" },
+      { title: "Progress", url: "progress.html" },
+      { title: "Videos", url: "videos.html" },
+      { title: "Guides", url: "guide.html" },
+      { title: "Community", url: "community.html" },
+      { title: "Webinars", url: "webinars.html" }
+    ];
+
+    const searchInput = document.getElementById('searchInput');
+    const resultsList = document.getElementById('results');
+
+    searchInput.addEventListener('input', function() {
+      const query = this.value.toLowerCase();
+      resultsList.innerHTML = '';
+
+      if (query.length === 0) {
+        return;
+      }
+
+      const filtered = data.filter(item => item.title.toLowerCase().includes(query));
+
+      if (filtered.length === 0) {
+        resultsList.innerHTML = '<li>No results found</li>';
+        return;
+      }
+
+      filtered.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item.title;
+        li.onclick = () => {
+          window.location.href = item.url;
+        };
+        resultsList.appendChild(li);
+      });
+    });
+  </script>
+</body>
+</html>

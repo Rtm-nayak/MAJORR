@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skill Innovator</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: red;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    a.cta-link {
+  text-decoration: none; /* removes underline */
+  color: inherit;        /* keeps the button's text color */
+}
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+  </style>
+</head>
+<body>
+  
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="logo"><img src="istockphoto-1299755243-612x612.jpg" alt="Skill Innovator Logo" style="height:50px; width:auto; vertical-align: middle; margin-right: 10px;">Skill Innovator</div>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">DashBoard</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="hosts.html">For Hosts</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="help.html">Help Center</a></li>
+      </ul>
+    </nav>
+    <div class="auth-links">
+      <!-- Buttons with anchored text inside -->
+      <a href="login.html"><button>Login</button></a>
+      <a href="signup.html"><button>Sign Up</button></a>
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Build Connections, Share Skills, and Learn Together &ndash;</h1>
+    <p>Empowering Growth with Skill Innovator! It's all free!</p>
+    <a href="profile.html" class="cta-link">
+      <button class="cta-button">Join Skill Innovator Today</button>
+    </a>
+    
+  </section>
+
+  <div class="container" id="loginContainer">
+    <button class="close-btn" id="closeLogin">X</button>
+    <h2>Login to Skill Innovator</h2>
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="Username or Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="button" id="loginBtn">Login</button>
+    </form>
+  </div>
+  <div class="container" id="signupContainer">
+    <button class="close-btn" id="closeSignup">X</button>
+    <h2>Sign Up for Skill Innovator</h2>
+    <form id="signupForm">
+        <input type="text" id="signupUsername" placeholder="Username" required>
+        <input type="email" id="signupEmail" placeholder="Email" required>
+        <input type="text" id="signupMobile" placeholder="Mobile Number" required>
+        <input type="text" id="otp" placeholder="Enter OTP" required>
+        <input type="password" id="signupPassword" placeholder="Password" required>
+        <button type="button" id="signupBtn">Sign Up</button>
+    </form>
+  </div>
+   
+  <!-- Our Services Section -->
+  <section class="services">
+    <h2>How Skill Innovator Works</h2>
+    <div class="services-container">
+      <div class="service-box">
+        <div class="circle-button">1</div>
+        <h3>Create Profile <a href="profile.html" class="arrow-link" title="Open"><span class="circle">&#8594;</span></a></h3>
+
+        <p>Sign up and build your personalised profile by shoecasing yor skills, expertise, and learning goals.</p>
+      </div>
+      <div class="service-box">
+        <div class="circle-button">2</div>
+        <h3>Match and Connect<a href="match.html" class="arrow-link" title="Open"><span class="circle">&#8594;</span></a></h3>
+
+      <p>Our intellligent system matches you with individuals offering or seeking the skills you're interested in. Connect with like-minded learners and experts. </p>
+      </div>
+      <div class="service-box">
+        <div class="circle-button">3</div>
+        <h3>Learn, Teach, and Track Progress<a href="progress.html" class="arrow-link" title="Open"><span class="circle">&#8594;</span></a></h3>
+        <p>Schedule sessions, share Knowledge, and track your progress - all on one platform. Collaborate and grow with a community passionate about skill sharing!</p>
+      </div>
+      
+      </div>
+    </div>
+  </section>
+
+   <!-- Our Services Section -->
+   <section class="services">
+    <h2>Pick A Path, Build Your Skill</h2>
+    <div class="services-container">
+      <div class="service-box">
+        <div class="circle-button">1</div>
+        <h3>Video Tutorials 🎥 <a href="videos.html" class="arrow-link" title="Open"><span class="circle">&#8594;</span></a></h3>
+        <p>Step-by-step guidance from experts.</p>
+        
+      </div>
+      <div class="service-box">
+        <div class="circle-button">2</div>
+        <h3>Written Guides & Articles 📖<a href="guide.html" class="arrow-link" title="Open"><span class="circle">&#8594;</span></a></h3>
+        <p>Downloadable PDFs and study materials.</p>
+      </div>
+      <div class="service-box">
+        <div class="circle-button">3</div>
+        <h3>One-on-One Mentorship 👥<a href="mentorship.html" class="arrow-link" title="Open"><span class="circle">&#8594;</span></a></h3>
+        <p>Personalized coaching from industry professionals.</p>
+      </div>
+      <div class="service-box">
+        <div class="circle-button">4</div>
+        <h3>Live Sessions & Webinars 🖥️<a href="webinars.html" class="arrow-link" title="Open"><span class="circle">&#8594;</span></a></h3>
+        <p>Q&A sessions to clear doubts in real time.</p>
+      </div>
+      <div class="service-box">
+        <div class="circle-button">5</div>
+        <h3>Skill Assessment & Certification 🏆<a href="assessment.html" class="arrow-link" title="Open"><span class="circle">&#8594;</span></a></h3>
+        <p>Quizzes and tests to evaluate learning progress.</p>
+      </div>
+      <div class="service-box">
+        <div class="circle-button">6</div>
+        <h3>Community & Networking 🤝<a href="community.html" class="arrow-link" title="Open"><span class="circle">&#8594;</span></a></h3>
+        <p>Discussion forums for peer-to-peer learning.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Skill Innovator. Empowering learners worldwide.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+
+</body>
+</html>

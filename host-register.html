@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register as Host | Skill Innovator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f8fb;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1f6391;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Host Registration Form</h2>
+
+    <form id="hostForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="experience">Your Expertise / Skill</label>
+      <input type="text" id="experience" required>
+
+      <label for="bio">Short Bio</label>
+      <textarea id="bio" rows="4" required></textarea>
+
+      <label for="format">Preferred Hosting Format</label>
+      <select id="format" required>
+        <option value="">Select</option>
+        <option value="live">Live Session</option>
+        <option value="video">Pre-recorded Tutorials</option>
+        <option value="mentorship">One-on-One Mentorship</option>
+      </select>
+
+      <button type="submit">Submit Application</button>
+    </form>
+
+    <a href="hosts.html" class="back-link">← Back to Hosts Page</a>
+  </div>
+
+  <script>
+    const form = document.getElementById('hostForm');
+  
+    form.addEventListener('submit', async function(event) {
+      event.preventDefault();
+  
+      const hostData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        experience: document.getElementById('experience').value,
+        bio: document.getElementById('bio').value,
+        format: document.getElementById('format').value
+      };
+  
+      try {
+        const response = await fetch('http://localhost:5000/api/hosts', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(hostData)
+        });
+  
+        const result = await response.json();
+        alert(result.message);
+        form.reset();
+      } catch (error) {
+        alert('Something went wrong. Please try again.');
+        console.error(error);
+      }
+    });
+  </script>
+
+</body>
+</html>

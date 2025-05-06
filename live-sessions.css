@@ -1,0 +1,51 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f6fc;
+    padding: 30px;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 850px;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #34495e;
+    margin-bottom: 40px;
+  }
+  
+  .session {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  
+  .session-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+  }
+  
+  .session-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .join-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: #2980b9;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .join-btn:hover {
+    background: #1c5980;
+  }
+  

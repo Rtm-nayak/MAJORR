@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | Skill Innovator</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-container {
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+      background: #f9f9f9;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 0.8rem;
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #004a99;
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="contactName" placeholder="Your Name" required>
+      <input type="email" id="contactEmail" placeholder="Your Email" required>
+      <textarea id="contactMessage" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="contactResponse"></p>
+  </div>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('contactResponse').textContent = "✅ Message sent successfully. We’ll get back to you soon.";
+      this.reset();
+    });
+  </script>
+</body>
+</html>

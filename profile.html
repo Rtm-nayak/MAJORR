@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Profile</title>
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+  <div class="profile-container">
+    <h2>Create or Edit Your Profile</h2>
+
+    <!-- Role Selection -->
+    <div class="role-selection">
+      <label>Select Role:</label>
+      <select id="role">
+        <option value="student">Student</option>
+        <option value="mentor">Mentor</option>
+      </select>
+    </div>
+
+    <!-- Profile Form -->
+    <form id="profileForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+
+      <!-- Dynamic Section -->
+      <div id="dynamicFields"></div>
+
+      <button type="submit">Save Profile</button>
+    </form>
+  </div>
+
+  <script src="profile.js"></script>
+</body>
+</html>

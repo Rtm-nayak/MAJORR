@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mentorship | Skill Innovator</title>
+  <link rel="stylesheet" href="mentorship.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>👥 One-on-One Mentorship</h1>
+
+    <input type="text" id="mentorSearch" placeholder="Search by skill (e.g., Python, Design)" />
+
+    <div class="mentors" id="mentorList">
+      <!-- Sample Mentors -->
+      <div class="mentor-card">
+        <h3>Aarav Mehta</h3>
+        <p>Field: Web Development</p>
+        <p>Skills: HTML, CSS, JavaScript</p>
+        <button onclick="bookSession('Aarav Mehta')">Request Session</button>
+      </div>
+      <div class="mentor-card">
+        <h3>Neha Sharma</h3>
+        <p>Field: Data Science</p>
+        <p>Skills: Python, Pandas, ML</p>
+        <button onclick="bookSession('Neha Sharma')">Request Session</button>
+      </div>
+      <div class="mentor-card">
+        <h3>Ravi Verma</h3>
+        <p>Field: UI/UX Design</p>
+        <p>Skills: Figma, Adobe XD</p>
+        <button onclick="bookSession('Ravi Verma')">Request Session</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const search = document.getElementById('mentorSearch');
+    const mentors = document.querySelectorAll('.mentor-card');
+
+    search.addEventListener('keyup', function () {
+      const query = search.value.toLowerCase();
+      mentors.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(query) ? 'block' : 'none';
+      });
+    });
+
+    function bookSession(name) {
+      alert(`Your mentorship request has been sent to ${name}!`);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fefefe;
+    padding: 30px;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: auto;
+    background: #f4f7fc;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2d4059;
+  }
+  
+  .question {
+    margin-bottom: 25px;
+  }
+  
+  label {
+    display: block;
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  button {
+    background: #2d98da;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #1c638f;
+  }
+  
+  #result {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #34495e;
+    text-align: center;
+  }
+  

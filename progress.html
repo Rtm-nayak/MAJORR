@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Track Your Progress | Skill Innovator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #0057b7;
+    }
+
+    .section {
+      margin-top: 40px;
+    }
+
+    .section h2 {
+      color: #333;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    .progress-group {
+      margin-bottom: 20px;
+    }
+
+    .progress-label {
+      margin-bottom: 5px;
+    }
+
+    .progress-bar {
+      background: #e0e0e0;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 18px;
+      background: #4caf50;
+      width: 0;
+      border-radius: 20px;
+      transition: width 1s ease;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .badge {
+      padding: 8px 15px;
+      background: #ffe082;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .events {
+      margin-top: 20px;
+      background: #f0f0f0;
+      border-radius: 10px;
+      padding: 15px;
+    }
+
+    .event {
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .event:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Track Your Progress</h1>
+
+    <!-- Progress Section -->
+    <div class="section">
+      <h2>Your Learning Progress</h2>
+
+      <div class="progress-group">
+        <div class="progress-label">Video Tutorials</div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 75%; background: #4caf50;"></div>
+        </div>
+      </div>
+
+      <div class="progress-group">
+        <div class="progress-label">Written Guides</div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 50%; background: #ff7043;"></div>
+        </div>
+      </div>
+
+      <div class="progress-group">
+        <div class="progress-label">Quizzes Attempted</div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 80%; background: #42a5f5;"></div>
+        </div>
+      </div>
+
+      <div class="progress-group">
+        <div class="progress-label">Mentorship Sessions</div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 60%; background: #ab47bc;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Badge Section -->
+    <div class="section">
+      <h2>Badges Earned</h2>
+      <div class="badges">
+        <div class="badge">🚀 First Quiz</div>
+        <div class="badge">💬 Mentorship Joined</div>
+        <div class="badge">📘 Read 5 Guides</div>
+        <div class="badge">🎯 Target Achieved</div>
+      </div>
+    </div>
+
+    <!-- Upcoming Sessions -->
+    <div class="section">
+      <h2>Upcoming Events</h2>
+      <div class="events">
+        <div class="event">🔹 UI/UX Design Mentorship – <strong>May 5, 5:00 PM</strong></div>
+        <div class="event">🔹 Webinar: Data Science Careers – <strong>May 8, 6:30 PM</strong></div>
+        <div class="event">🔹 Python Assessment – <strong>May 10, 4:00 PM</strong></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

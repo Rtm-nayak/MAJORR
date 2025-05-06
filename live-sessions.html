@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Sessions | Skill Innovator</title>
+  <link rel="stylesheet" href="live-sessions.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🖥️ Upcoming Live Sessions & Webinars</h1>
+
+    <div class="session" id="sessionsContainer">
+      <!-- Sessions will be dynamically added -->
+    </div>
+  </div>
+
+  <script>
+    const sessions = [
+      {
+        title: "Intro to JavaScript",
+        date: "May 5, 2025",
+        time: "5:00 PM IST",
+        host: "Anjali Verma",
+        link: "#"
+      },
+      {
+        title: "Data Science with Python",
+        date: "May 6, 2025",
+        time: "7:00 PM IST",
+        host: "Raj Mehra",
+        link: "#"
+      },
+      {
+        title: "UX Design Essentials",
+        date: "May 8, 2025",
+        time: "4:00 PM IST",
+        host: "Sneha Kulkarni",
+        link: "#"
+      }
+    ];
+
+    const container = document.getElementById("sessionsContainer");
+
+    sessions.forEach(session => {
+      const div = document.createElement("div");
+      div.classList.add("session-card");
+      div.innerHTML = `
+        <h3>${session.title}</h3>
+        <p><strong>Date:</strong> ${session.date}</p>
+        <p><strong>Time:</strong> ${session.time}</p>
+        <p><strong>Host:</strong> ${session.host}</p>
+        <a href="${session.link}" class="join-btn">Register</a>
+      `;
+      container.appendChild(div);
+    });
+  </script>
+</body>
+</html>
